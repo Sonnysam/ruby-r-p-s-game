@@ -5,20 +5,27 @@ losses = 0
 # Welcome message
 puts "Welcome to Rock, Paper, Scissors!"
 
-puts "Please enter your name:"
+print "Please enter your name: "
 player_name = gets.chomp
 # name = gets.chomp
-user_choice = gets.chomp.downcase
 
-puts player_name + " you chose #{user_choice}"
 
-# # create a hash of choices
-# choices = {
-#     "r" => "rock",
-#     "p" => "paper",
-#     "s" => "scissors"
-# }
+puts "Welcome " + player_name  + " to my game! Enjoy :)"
+
+# user_choice = gets.chomp.downcase
+
+ # create a hash of choices
+choices = {
+    "r" => "rock",
+    "p" => "paper",
+    "s" => "scissors"
+}
+
+# comp = ["rock", "paper", "scissors"].sample
+comp_choice = choices.keys.sample
+
+puts "Computer chose #{choices[comp_choice]}"
 
 # human = gets.chomp.downcase
-# comp = ["rock", "paper", "scissors"].sample
+
 
