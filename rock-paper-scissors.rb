@@ -13,6 +13,8 @@ player_name = gets.chomp
 puts "Welcome " + player_name  + " to my game! Enjoy :)"
 
 # user_choice = gets.chomp.downcase
+puts "Please choose rock, paper, or scissors: "
+user_choice = gets.chomp.downcase
 
  # create a hash of choices
 choices = {
