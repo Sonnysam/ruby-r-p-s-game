@@ -26,8 +26,32 @@ choices = {
 # comp = ["rock", "paper", "scissors"].sample
 comp_choice = choices.keys.sample
 
-puts "Computer chose #{choices[comp_choice]}"
+puts "You chose #{choices[user_choice]}and Computer chose #{choices[comp_choice]}"
 
 # human = gets.chomp.downcase
+
+if human == "rock" && comp == "paper"
+    puts "You lose!"
+    losses += 1
+elsif human == "rock" && comp == "scissors"
+    puts "You win!"
+    wins += 1
+elsif human == "paper" && comp == "rock"
+    puts "You win!"
+    wins += 1
+elsif human == "paper" && comp == "scissors"
+    puts "You lose!"
+    losses += 1
+elsif human == "scissors" && comp == "rock"
+    puts "You lose!"
+    losses += 1
+elsif human == "scissors" && comp == "paper"
+    puts "You win!"
+    wins += 1
+elsif human == comp
+    puts "It's a tie!"
+end
+
+
 
 
